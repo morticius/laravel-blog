@@ -11,7 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="https://kit.fontawesome.com/a285054514.js" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -36,7 +36,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Categories</a></li>
+                            <li><a href="{{route('admin.category.index')}}">Categories</a></li>
                             <li><a href="#">Materials</a></li>
                         </ul>
                     </li>
