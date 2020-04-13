@@ -10,6 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/a285054514.js" crossorigin="anonymous"></script>
     <!-- Fonts -->
@@ -37,7 +38,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{route('admin.category.index')}}">Categories</a></li>
-                            <li><a href="#">Materials</a></li>
+                            <li><a href="{{route('admin.article.index')}}">Articles</a></li>
                         </ul>
                     </li>
                 </ul>

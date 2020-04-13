@@ -44,7 +44,7 @@ class CategoryController extends Controller
     {
         Category::create($request->all());
 
-        return redirect(route('admin.category.index'));
+        return redirect()->route('admin.category.index');
     }
 
     /**
@@ -84,14 +84,14 @@ class CategoryController extends Controller
     {
         $category->update($request->except('slug'));
 
-        return redirect(route('admin.category.index'));
+        return redirect()->route('admin.category.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Category  $category
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Category $category)
     {
@@ -101,6 +101,6 @@ class CategoryController extends Controller
         } catch (\Exception $e) {
         }
 
-        return redirect(route('admin.category.index'));
+        return redirect()->route('admin.category.index');
     }
 }
