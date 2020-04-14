@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ea743d-40d5-489f-9bdd-efa8c0628a10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/kitsor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_12_081435_create_categoryable_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/articles/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/articles/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/articles/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/articles/partials/categories.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/articles/partials/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/BlogServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/article.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/top_menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleContoller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_10_091203_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_10_091203_create_articles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/partials/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/partials/categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app_admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +195,9 @@
       <workItem from="1586330144953" duration="8027000" />
       <workItem from="1586508718883" duration="6057000" />
       <workItem from="1586594573592" duration="2501000" />
-      <workItem from="1586681100445" duration="9336000" />
+      <workItem from="1586681100445" duration="12457000" />
+      <workItem from="1586850580552" duration="629000" />
+      <workItem from="1586852772976" duration="4562000" />
     </task>
     <servers />
   </component>
@@ -210,14 +208,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="381" y="202" width="663" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586855079699">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="381" y="202" width="663" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1296.741@70.27.1296.741" timestamp="1586855079699" />
     <state x="401" y="125" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584201657229">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="401" y="125" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/70.27.1296.741@70.27.1296.741" timestamp="1584201657229" />
-    <state x="443" y="27" width="608" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586510607833">
+    <state x="443" y="27" width="608" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586857174729">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="443" y="27" width="608" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1296.741@70.27.1296.741" timestamp="1586510607833" />
+    <state x="443" y="27" width="608" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1296.741@70.27.1296.741" timestamp="1586857174729" />
     <state x="451" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586679655323">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
@@ -246,10 +248,10 @@
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="277" y="261" width="399" height="156" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1586079083101" />
-    <state x="155" y="180" key="com.intellij.ide.util.TipDialog" timestamp="1586681110428">
+    <state x="155" y="180" key="com.intellij.ide.util.TipDialog" timestamp="1586852774193">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="155" y="180" key="com.intellij.ide.util.TipDialog/70.27.1296.741@70.27.1296.741" timestamp="1586681110428" />
+    <state x="155" y="180" key="com.intellij.ide.util.TipDialog/70.27.1296.741@70.27.1296.741" timestamp="1586852774193" />
     <state x="91" y="141" key="com.intellij.ide.util.TipDialog/70.27.730.573@70.27.730.573" timestamp="1585933178747" />
     <state x="356" y="61" width="713" height="680" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1584348985075">
       <screen x="70" y="27" width="1296" height="741" />
